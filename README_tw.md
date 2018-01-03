@@ -97,9 +97,9 @@ ID可以再貼圖的網址當中找到，可以在貼圖上按`右鍵`->`檢查/
 
 預設的貼圖數量是40個，大部分貼圖包的標準數量都是40個，但是有些貼圖(通常是有動畫的貼圖)除外
 
-## Resizing the window
+## 調整分頁大小
 
-You can resize the LINE tab using the following commands in console:
+你可以再控制台中輸入下列的指令調整Line分頁的大小：
 
 `lineemotes.menu.setWidth(width)`
 
@@ -107,4 +107,22 @@ You can resize the LINE tab using the following commands in console:
 
 `lineemotes.menu.setSize(width, height)`
 
-*※ for example `lineemotes.menu.setSize(494, 326)`*
+*※ 舉例 `lineemotes.menu.setSize(494, 326)`*
+
+## 新增上述方法無法用的貼圖
+[![](https://camo.githubusercontent.com/6a6c9d4febc36ae58e9e0f7577aab1756a020f70/68747470733a2f2f696d616765732d312e646973636f72646170702e6e65742f2e654a774e7955734f7779414d414e47376341444d78355130743045456b61674a52746852466c5876586d6235357176756361705637534b64563444743445786a30797730556932364574577a704836777a6e5242456b6c3576306f54427563746f6e50653277556a786f426d556c6a4d793367625a2d453948397a74302d687075726571666e384642434c532e72394b32513273713566664d526b786a6f466175426d7a30663755)](https://store.line.me/stickershop/product/2999/ja)
+
+有些貼圖可能會出現上述的訊息
+
+為了得到貼圖的ID只能透過Line程式使用的API來下載貼圖包，
+可以使用下列的範本
+`https://dl.stickershop.line.naver.jp/products/0/0/1/<貼圖ID>/android/stickers.zip`
+
+舉例 `https://dl.stickershop.line.naver.jp/products/0/0/1/2999/android/stickers.zip`
+
+*注意! 你可以在貼圖的網址中找到貼圖包的ID*
+![](https://camo.githubusercontent.com/fe841f6288a0dd1c28c161494ed36d4a97f6acca/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3233313434323233333138343734373534302f3331303139343039333631333531343737342f756e6b6e6f776e2e706e67)
+
+用你習慣的解壓所程式來解壓，找到貼圖ID最小的即是貼圖包中第一個貼圖ID
+
+*※ 假設貼圖數量是40個，如果解壓縮出來的檔案數量並非83個(40個貼圖，40個縮圖，2個分類圖示，1個貼圖的資訊檔)，那就手動設定適當的貼圖數量*
