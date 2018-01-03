@@ -1,6 +1,7 @@
 _Feel free to [join the Discord server](https://discordapp.com/invite/wCX6K8q) and ping me if you have any questions or [open an Issue on GitHub](https://github.com/awaken1ng/bd-linestickers/issues)_
 
-[建議的中文說明](INSTALL.md) by josemahorio
+[簡易的中文說明](INSTALL.md) by josemahorio
+
 [完整的中文說明](README_tw.md) by josemahorio
 
 [日本語の解説](README_ja.md)
